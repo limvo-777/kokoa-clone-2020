@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=w">
+    <title>Welcome to Kokoa Talk</title>
+    <script>
+        function cTime(){
+            var ntime = document.getElementById("current-time");
+            var now = new Date();
+            var nowTime = now.getHours()+":"+now.getMinutes();
+            ntime.innerHTML=nowTime;
+            setTimeout("cTime()",1000);
+        }
+        window.onload = function(){
+            cTime();
+        }
+    </script>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <!-- To Do : Wifi Icon--> 
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span id=current-time></span>
+        </div>
+        <div class="status-bar__column">
+            <span>99%</span>
+            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-bolt"></i>
+            <!--Battery Icon-->
+            <!--Lightning Icon-->
+        </div>
+    </div>
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to KokoaTalk</h1>
+        <p class="welcome-header__text">If you have a Kokoa Account, log in with your email or phone number.</p>
+    </header>
+    
+    <form action="friends.html" method="get" id="login-form">
+        <input name="username" type="text" placeholder="Emaile or phone number"/>
+        <input name="password" type="password" placeholder="Password"/>
+        <input type="submit" value="Log In"/>
+        <input type="submit" value="Sign Up"/>
+        <a href="#">Find Kokoa Account or Password</a>
+    </form>
+   
+    <script src="https://kit.fontawesome.com/ce73c5c161.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
