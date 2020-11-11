@@ -9,3 +9,12 @@
     align-items: center;
     font-weight: 600;
 }
+
+.badge__sm {
+    background-color: red;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+}

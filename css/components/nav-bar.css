@@ -22,14 +22,12 @@
     bottom: 15px;
 }
 .nav__ellipsis {
-    background-color: red;
     margin: -3px;
-    width: 8px;
-    height: 8px;
-    border-radius: 4px;
-    box-sizing: border-box;
-    display: flex;
     position: absolute;
     right: 0;
-    
+}
+.nav__setting {
+    position: absolute;
+    right: 12px;
+    top: 50px;
 }
