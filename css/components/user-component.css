@@ -57,3 +57,19 @@
     margin-bottom: 10px;
     display: block;
 }
+.user-component__column h6 {
+    position: relative;
+}
+.user-component__column h6 span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border: 1.5px solid red;
+    border-radius: 50%;
+    color: tomato;
+    position: absolute;
+    right: -5px;
+    top: 0px;
+}

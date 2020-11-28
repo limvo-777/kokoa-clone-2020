@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=w">
+    <title>Settings - Kokoa Clone</title>
+    <script>
+        function cTime(){
+            var ntime = document.getElementById("current-time");
+            var ntime2 = document.getElementById("time2");
+            var now = new Date();
+            var nowTime = now.getHours()+":"+now.getMinutes();
+            ntime.innerHTML=nowTime;
+            ntime2.innerHTML=nowTime;
+            setTimeout("cTime()",1000);
+        }
+        window.onload = function(){
+            cTime();
+        }
+    </script>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <!-- To Do : Wifi Icon--> 
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span id=current-time></span>
+        </div>
+        <div class="status-bar__column">
+            <span>99%</span>
+            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-bolt"></i>
+            <!--Battery Icon-->
+            <!--Lightning Icon-->
+        </div>
+    </div>
+
+
+    <main class="main-screen">
+
+    </main>
+   
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="far fa-user fa-2x"></i>
+                </a>
+                    
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification badge">1</span>
+                    <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html">
+                    <i class="fas fa-search fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <div class="nav__ellipsis badge__sm">&nbsp; </div>
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+   
+    <script src="https://kit.fontawesome.com/ce73c5c161.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
